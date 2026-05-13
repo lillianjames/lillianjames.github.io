@@ -1,0 +1,22 @@
+
+:root {
+  
+    --bgcolor: #861657;
+    --txtcolor: #FFA69E;
+    --secondary: #1EA896 ;
+    --third: #989FCE ; 
+    --white: #EAF0CE ;
+}
+#header { 
+    text-align: center; 
+    background-color: var(--bgcolor);
+}
+#Employees{
+    display: flex;
+    justify-content:space-evenly ;
+}
+#Employees img{ 
+    width: 500px;
+    height: 400px;
+    border-radius: 20px;
+}

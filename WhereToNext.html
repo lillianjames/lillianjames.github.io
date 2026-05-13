@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Where To Next?</title>
+     <link rel="stylesheet" href="css/BeenThere.css">
+      <link rel="icon" type="image/x-icon" href="media\images\favicon_io\favicon.ico"> 
+</head>
+<body> 
+    <header> 
+        <nav> 
+            <ul>
+            <li><a href="BeenThere.html">BEEN THERE</a></li>
+            <li><a href="WantTo.html">WANT TO GO</a></li>
+            <li><a href="WhereToNext.html">WHERE TO NEXT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- body of HTML start of form--> 
+     
+        <form action="thankyou2.html"> 
+        <div id="inner form">
+            <h1 id= "heading">Where Should I go next?</h1> 
+        <br>
+            <label> Country:</label>  
+            <input type="text" id="country">
+            <br> 
+            <label>City:</label> 
+            <input type="text" id="city">
+            <br>  
+           
+<p>Should I travel with company?</p>
+
+  <input type="radio" name="travel" value="yes" onclick="showAnswer(this.value)"> Yes<br>
+  <input type="radio" name="travel" value="no" onclick="showAnswer(this.value)"> No<br><br>
+
+  <p id="result"></p>
+
+
+<script>
+  function showAnswer(answer) {
+    document.getElementById("result").textContent = "Answer: " + answer;
+  }
+</script>
+            <p>other places:</p>
+            <textarea rows="10" cols="40" placeholder="Suggest other places here...."></textarea>
+            <br>
+            <button type="reset">Clear</button> 
+            <button type="submit">Submit</button>
+        </div>
+     </form>
+
+<label>Have you traveled before?</label><br>
+
+<input type="checkbox" id="yesTravel"> Yes
+<input type="checkbox" id="noTravel"> No
+
+<br><br>
+
+<button onclick="checkTravel()">Submit</button>
+
+<p id="answer"></p>
+<footer>
+    <div id="col1"></div>
+        <h2>Social Media</h2> 
+            <img src="media/images/instagram.png" alt="Link to my Instagram" 
+            width="100" height="100">
+            <img src="media/images/tik-tok.png" alt="Link to my Tiktok"
+            width="100" height="100">
+    <div id="col2"> 
+        <h3> Call me, text me </h3>      
+        <p>Tuesday-Thursday 8:00AM - 4:00PM</p>  
+        <p>Friday-Saturday 10:00AM-2:00AM</p>
+        <p>Sunday-Monday Off the Grid!</p>
+    </div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
